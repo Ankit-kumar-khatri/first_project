@@ -8,12 +8,26 @@ class FirstApp extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Ankit's First Flutter App"),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.green,
       ),
       body: Center(
         child: Container(
-          child: Text("Hello World"),
+          color: Colors.red,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.blue,
+                child: Center(
+                  child: Text("Hello World"),
+                ),
+              ),
+            ],
+          ),
         ),
+        // child: Text('hello buddy'),
       ),
     );
   }
