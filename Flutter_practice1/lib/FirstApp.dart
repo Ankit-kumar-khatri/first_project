@@ -7,7 +7,7 @@ class FirstApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Ankit's First Flutter App"),
+        title: const Text("Ankit's First Flutter App"),
         backgroundColor: Colors.green,
       ),
       body: Center(
@@ -20,8 +20,8 @@ class FirstApp extends StatelessWidget {
                 width: 100,
                 height: 100,
                 color: Colors.blue,
-                child: Center(
-                  child: Text("Hello World"),
+                child: const Center(
+                  child: TestClass(),
                 ),
               ),
             ],
@@ -29,6 +29,31 @@ class FirstApp extends StatelessWidget {
         ),
         // child: Text('hello buddy'),
       ),
+    );
+  }
+}
+
+class TestClass extends StatelessWidget {
+  const TestClass({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            Icon(Icons.email),
+            Text(
+              'This is an Email',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontStyle: FontStyle.normal,
+                  fontWeight: FontWeight.normal),
+            )
+          ],
+        )
+      ],
     );
   }
 }
