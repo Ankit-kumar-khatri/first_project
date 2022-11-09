@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class FirstApp extends StatelessWidget {
@@ -43,14 +45,14 @@ class TestClass extends StatelessWidget {
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Icon(Icons.email),
+            Icon(Icons.email, color: Colors.white),
             Text(
               'This is an Email',
               style: TextStyle(
                   color: Colors.white,
                   fontStyle: FontStyle.normal,
                   fontWeight: FontWeight.normal),
-            )
+            ),
           ],
         )
       ],
