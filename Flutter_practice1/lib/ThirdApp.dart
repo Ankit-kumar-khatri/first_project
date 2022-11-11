@@ -2,6 +2,7 @@
 
 import 'package:first_project/SecondApp.dart';
 import 'package:flutter/material.dart';
+import 'Product Details Application/Details App/ProductDetails.dart';
 
 class ThirdApp extends StatelessWidget {
   final String title;
@@ -14,7 +15,8 @@ class ThirdApp extends StatelessWidget {
         title: Text(this.title),
       ),
       body: const Center(
-        child: SecondApp('Hello World'),
+        // child: SecondApp('Hello World'),
+        child: ProductDetails(),
       ),
     );
   }

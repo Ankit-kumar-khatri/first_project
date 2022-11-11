@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: this._title,
       theme: ThemeData(primarySwatch: Colors.blue),
       // home: const FirstApp(),
-      home: const ThirdApp('Ankit Khatri'),
+      home: const ThirdApp('Product Details'),
     );
   }
 }
