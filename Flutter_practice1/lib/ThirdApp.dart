@@ -13,6 +13,11 @@ class ThirdApp extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(this.title),
+        leading: const IconButton(
+          icon: Icon(Icons.menu),
+          tooltip: 'Menu',
+          onPressed: null,
+        ),
       ),
       body: const Center(
         // child: SecondApp('Hello World'),
